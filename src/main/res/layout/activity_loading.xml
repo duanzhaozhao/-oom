@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <RelativeLayout android:id="@+id/load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+        <TextView android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="用户名："
+            />
+        <EditText
+            android:id="@+id/userId"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/user"
+            />
+        <TextView android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="密码："
+            android:layout_below="@+id/user"
+            android:layout_marginTop="20dp"
+            android:layout_alignLeft="@+id/user"
+            />
+        <EditText
+            android:id="@+id/passwordId"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/password"
+            android:layout_alignBottom="@+id/password"
+            android:layout_alignLeft="@+id/userId"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            />
+        <Button
+            android:id="@+id/sql"
+            android:layout_below="@+id/password"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+           android:text="sql"
+            />
+        <Button
+            android:id="@+id/xml"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="xml"
+            android:layout_toRightOf="@+id/sql"
+            android:layout_alignTop="@+id/sql"
+            android:layout_marginLeft="10dp"
+            />
+        <Button
+            android:id="@+id/json"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="json"
+            android:layout_toRightOf="@+id/xml"
+            android:layout_alignTop="@+id/xml"
+            android:layout_marginLeft="10dp"
+            />
+        <Button
+            android:id="@+id/regiser"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:layout_toRightOf="@+id/json"
+            android:layout_alignTop="@+id/json"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+</RelativeLayout>
